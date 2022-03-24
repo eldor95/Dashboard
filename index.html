@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Dashboard using HTML CSS and JavaScript</title>
+  <title>Dashboard</title>
   <!-- MATERIAL ICONS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
@@ -25,7 +25,7 @@
           <h2>EGA <span class="danger">TOR</span></h2>
         </div>
 
-        <div class="close" id="close-btn">
+        <div class="close closeD" id="close-btn">
           <span class="material-icons-sharp">close</span>
         </div>
 
@@ -180,7 +180,7 @@
         <th>Product Number</th>
         <th>Payment</th>
         <th>Status</th>
-        <th></th>
+        <th>Detail </th>
       </tr>
     </thead>
     <tbody>
@@ -214,8 +214,8 @@
             <p>Hey, <b>Daniel</b></p>
             <small class="text-muted">Admin</small>
           </div>
-          <div class="profile-photo">
-            <img src="./images/profile-1.jpg" alt="">
+          <div class="profile-photo" id="profile_Admin">
+            <img src="./images/profile-1.jpg" class="c" alt="">
           </div>
         </div>
       </div>
@@ -311,7 +311,7 @@
   </div>
 
   </div>
-  <script src="index.js"></script>
-  <script src="order.js"></script>
+  <script src="./orders.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>

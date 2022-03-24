@@ -136,12 +136,14 @@ height: 100vh;
 
 }
 aside .top{
-  background: white;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 1.4rem;
 }
+
+
 
 aside .logo{
   display: flex;
@@ -339,13 +341,14 @@ main .insights small{
 
 main .recent-orders{
   margin-top: 2rem;
+  /* grid-template-columns: 1fr; */
 }
 main .recent-orders h2{
   margin-bottom: 0.8rem;
 }
 main .recent-orders table{
   background: var(--color-white);
-  width: 100%;
+  width: 94%;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   text-align: center;
@@ -383,7 +386,7 @@ main .recent-orders a{
   display: flex;
   justify-content: end;
   gap: 2rem;
-  /* background: gray; */
+  
 }
 .right .top button{
   display: none;
@@ -501,6 +504,10 @@ main .recent-orders a{
 .right .sales-analytics .add-product div h3{
   font-weight: 600;
 }
+.right .sales-analytics .add-product:hover{
+  background: var(--color-primary);
+  color: var(--color-white);
+}
 
 /* ======================= MEDIA QUERIS ================= */
 
@@ -511,7 +518,9 @@ main .recent-orders a{
   }
 
   aside .logo h2{
-    display:none;
+    /* display:none; */
+font-size: 0.9rem;
+
   }
   aside .sidebar h3{
     display: none;
@@ -535,7 +544,7 @@ main .recent-orders{
   margin: 2rem 0 0 8.8rem;
 }
 main .recent-orders table{
-  width: 84vw;
+  width: 85vw;
 }
 main table thead tr th:last-child,
 main table thead tr th:first-child{
@@ -626,6 +635,9 @@ main .recent-orders table{
 }
 .right .profile .info{
   display: none;
+}
+.right .profile #profile_Admin{
+  cursor: pointer;
 }
 .right .top button{
   display: inline-block;
